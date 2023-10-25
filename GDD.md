@@ -1,0 +1,43 @@
+# Game Design Document For Learn English Game
+## Feature
+- Go around a space (house, room, square...) and find the object indicated by the game
+  - Game can indicate by text or voice
+    - A word (easy)
+    - A question (normal)
+    - A similar description (harder) 
+  - Listen request again(limit times)
+  - Game need to control number of object in the space
+  - Time to find (countdown timer)
+  - Times to choose if choose wrong
+  - Space difficult level (easy, normal, hard)
+  - ...
+- Go around a space => click on any object => answer the question by the object => get point
+  - Technology require:
+    - Speech to text and text to speech
+    - A mechanism for scoring answers (0.0->10.0)
+    - Need AI or give answer format (S+V+O, S+be+Ving...)
+  - Point needed to pass this level
+  - Countdown timer
+  - Space difficult level
+- Choose a person working on a specific field then talk with them to test your english knowledge in this field
+  - Fields:
+    - IT, Business, Education, Healthy, Transportation, Sale, Game...
+  - Questions level: easy, normal, hard
+## User
+- Login
+  - username+password=>verify gmail
+  - oauth2
+- User Point
+  - Add point if pass a level
+  - Unlock a level if point was higher than a specific number
+- User history
+  - By day: Store all user activities in database
+  - Report for user
+- User settings
+  - Remind learn schedule
+  - Push notification
+  - ...
+- Community
+  - Telegram
+  - Discord
+  - Facebook fan page
